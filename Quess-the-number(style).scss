@@ -1,0 +1,272 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@mixin PixelFont  {
+    font-family:  'Dancing Script', cursive;
+    font-family:   'Oleo Script', cursive;
+    font-family:   'VT323', monospace;
+}
+
+
+$bg-color: #1b065e;
+$font-color: #F5ECCD;
+$new-color: mix($bg-color,$font-color);
+//@debug  $new-color;
+
+html {
+    font-size: 62.5%;
+}
+
+
+.body {
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: column;
+
+    .header {
+        width: 100%;
+        //height: 30rem;
+        //border: 0.1rem solid $font-color;
+
+
+        &__container {
+            width: 100%;
+            height: 100%;
+            //padding: 3rem 0;
+            display: flex;
+            flex-direction: column;
+
+
+            .header-content-upper {
+                display: flex;
+                justify-content: space-between;
+                padding: 3rem 2rem;
+
+                .upper-btn {
+                   //padding: 1rem;
+                   background-color: $font-color;
+                   border-radius: 1rem;
+                   border: 0.2rem solid darken($color: $bg-color, $amount: 20%);
+                   height: 5rem;
+                   width: 15rem;
+                   //display: flex;
+                   //text-align: center;
+                   transition: all .3s;
+
+                   &:hover {
+                       cursor: pointer;
+                       transform: scale(1.1)
+                   }
+
+                   &:active {
+                       transform: scale(0.9)
+                   }
+
+                   .btn-text {
+                      @include PixelFont();
+                      color: $bg-color;
+                      font-size: 2.5rem;
+                      font-weight: 600;
+                   }
+                }
+
+
+                .upper-warn {
+                   @include PixelFont();
+                   color: $font-color;
+                   font-size: 3rem;
+                   font-weight: 700;
+                   align-self: center;
+                    
+                   &::before {
+                       content: "<";
+                   }
+
+                   &::after {
+                    content: ">";
+                   }
+                }
+            }
+
+
+            .header-title {
+                @include PixelFont();
+                color: $font-color;
+                font-size: 6rem;
+                font-weight: 800;
+                align-self: center;
+                justify-self: center;
+                margin-top: 2rem;
+            }
+
+
+            .header-block {
+                margin-top: 6rem;
+                height: 8rem;
+                width: 100%;
+                //border: 0.1rem solid $font-color; 
+
+                &__container {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+
+
+                    .header-block-line {
+                        position: absolute;
+                        width: 100%;
+                        height: 1rem;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background-color: $font-color;
+                    }
+
+
+                    .hblock-box {
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        height: 100%;
+                        width: 15rem;
+                        background-color: $font-color;
+
+                        &__container {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+
+
+                            .box-qtext {
+                                @include PixelFont();
+                                color: $bg-color;
+                                font-size: 5rem;
+                                font-weight: 700;
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%,-50%);
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+
+    .main {
+        //border: 0.1rem solid white;
+        width: 100%;
+
+        &__container {
+            width: 100%;
+            //display: flex;
+            position: relative;
+
+
+            .main-content {
+                // align-self: center;
+                // justify-self: center;
+                 margin-top: 7rem;
+                 display: flex;
+                 //gap: 3rem;
+                 justify-content: space-around;
+                 width: 100%;
+
+                .content-block {
+                    display: flex;
+                    flex-direction: column;
+                    //gap: 2rem;
+
+                    .quess-input {
+                        width: 15rem;
+                        height: 10rem;
+                        background-color:$bg-color ;
+                        color:$font-color;
+                        border-radius: 0.5rem;
+                        border: 0.2rem solid $font-color;
+                        align-self: center;
+                        justify-self: center;
+                        text-align: center;
+
+                        &:focus {
+                            outline: none;
+                            border: 0.3rem solid $font-color;
+                        }
+
+
+                        @include PixelFont();
+                        font-size: 4rem;
+                    }
+
+                    .quess-btn {
+                        width: 18rem;
+                        background-color: $font-color;
+                        border-radius: 1rem;
+                        border: 0.2rem solid darken($color: $bg-color, $amount: 20%);
+                        height: 5rem;
+                        margin-top: 2rem;
+                        transition: all .3s;
+
+                        &:hover {
+                            cursor: pointer;
+                            transform: scale(1.1)
+                        }
+
+                        &:active {
+                            transform: scale(0.9)
+                        }
+
+                        .main-btn-text {
+                            @include PixelFont();
+                            color: $bg-color;
+                            font-size: 2.5rem;
+                            font-weight: 600;
+                        }
+                    }
+
+                }
+
+
+
+                .content-block2 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+
+                    .quess-warn {
+                        @include PixelFont();
+                        color: $font-color;
+                        font-size: 3rem;
+                        font-weight: 600;
+                    }
+
+
+                    .quess-score {
+                        @include PixelFont();
+                        color: $font-color;
+                        font-size: 3rem;
+                        font-weight: 600;
+                    }
+
+
+                    .quess-b-score {
+                        @include PixelFont();
+                        color: $font-color;
+                        font-size: 3rem;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+    }
+}

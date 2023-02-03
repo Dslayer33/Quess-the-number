@@ -1,0 +1,256 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.body {
+  background-color: #1b065e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.body .header {
+  width: 100%;
+}
+.body .header__container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.body .header__container .header-content-upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 2rem;
+}
+.body .header__container .header-content-upper .upper-btn {
+  background-color: #F5ECCD;
+  border-radius: 1rem;
+  border: 0.2rem solid black;
+  height: 5rem;
+  width: 15rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.body .header__container .header-content-upper .upper-btn:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.body .header__container .header-content-upper .upper-btn:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.body .header__container .header-content-upper .upper-btn .btn-text {
+  font-family: "Dancing Script", cursive;
+  font-family: "Oleo Script", cursive;
+  font-family: "VT323", monospace;
+  color: #1b065e;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.body .header__container .header-content-upper .upper-warn {
+  font-family: "Dancing Script", cursive;
+  font-family: "Oleo Script", cursive;
+  font-family: "VT323", monospace;
+  color: #F5ECCD;
+  font-size: 3rem;
+  font-weight: 700;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.body .header__container .header-content-upper .upper-warn::before {
+  content: "<";
+}
+.body .header__container .header-content-upper .upper-warn::after {
+  content: ">";
+}
+.body .header__container .header-title {
+  font-family: "Dancing Script", cursive;
+  font-family: "Oleo Script", cursive;
+  font-family: "VT323", monospace;
+  color: #F5ECCD;
+  font-size: 6rem;
+  font-weight: 800;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: 2rem;
+}
+.body .header__container .header-block {
+  margin-top: 6rem;
+  height: 8rem;
+  width: 100%;
+}
+.body .header__container .header-block__container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.body .header__container .header-block__container .header-block-line {
+  position: absolute;
+  width: 100%;
+  height: 1rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #F5ECCD;
+}
+.body .header__container .header-block__container .hblock-box {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 100%;
+  width: 15rem;
+  background-color: #F5ECCD;
+}
+.body .header__container .header-block__container .hblock-box__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.body .header__container .header-block__container .hblock-box__container .box-qtext {
+  font-family: "Dancing Script", cursive;
+  font-family: "Oleo Script", cursive;
+  font-family: "VT323", monospace;
+  color: #1b065e;
+  font-size: 5rem;
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.body .main {
+  width: 100%;
+}
+.body .main__container {
+  width: 100%;
+  position: relative;
+}
+.body .main__container .main-content {
+  margin-top: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+.body .main__container .main-content .content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.body .main__container .main-content .content-block .quess-input {
+  width: 15rem;
+  height: 10rem;
+  background-color: #1b065e;
+  color: #F5ECCD;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #F5ECCD;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-family: "Oleo Script", cursive;
+  font-family: "VT323", monospace;
+  font-size: 4rem;
+}
+.body .main__container .main-content .content-block .quess-input:focus {
+  outline: none;
+  border: 0.3rem solid #F5ECCD;
+}
+.body .main__container .main-content .content-block .quess-btn {
+  width: 18rem;
+  background-color: #F5ECCD;
+  border-radius: 1rem;
+  border: 0.2rem solid black;
+  height: 5rem;
+  margin-top: 2rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.body .main__container .main-content .content-block .quess-btn:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.body .main__container .main-content .content-block .quess-btn:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.body .main__container .main-content .content-block .quess-btn .main-btn-text {
+  font-family: "Dancing Script", cursive;
+  font-family: "Oleo Script", cursive;
+  font-family: "VT323", monospace;
+  color: #1b065e;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.body .main__container .main-content .content-block2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.body .main__container .main-content .content-block2 .quess-warn {
+  font-family: "Dancing Script", cursive;
+  font-family: "Oleo Script", cursive;
+  font-family: "VT323", monospace;
+  color: #F5ECCD;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.body .main__container .main-content .content-block2 .quess-score {
+  font-family: "Dancing Script", cursive;
+  font-family: "Oleo Script", cursive;
+  font-family: "VT323", monospace;
+  color: #F5ECCD;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.body .main__container .main-content .content-block2 .quess-b-score {
+  font-family: "Dancing Script", cursive;
+  font-family: "Oleo Script", cursive;
+  font-family: "VT323", monospace;
+  color: #F5ECCD;
+  font-size: 3rem;
+  font-weight: 600;
+}
