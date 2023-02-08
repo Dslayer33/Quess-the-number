@@ -1,4 +1,4 @@
-
+@use  "adaptive/Quess-number-adaptive";
 
 * {
     padding: 0;
@@ -21,6 +21,12 @@ $new-color: mix($bg-color,$font-color);
 
 html {
     font-size: 62.5%;
+}
+
+.html.html {
+    @include Quess-number-adaptive.big-screens {
+        font-size: 90%;
+    }
 }
 
 
@@ -76,6 +82,25 @@ html {
                    }
                 }
 
+                .upper-btn.upper-btn.upper-btn.upper-btn {
+                    @include Quess-number-adaptive.breakpoint5 {
+                        width: 8rem;
+                    }
+                }
+
+
+                .upper-btn.upper-btn.upper-btn {
+                    @include Quess-number-adaptive.breakpoint3 {
+                        width: 10rem;
+                    }
+                }
+
+                .upper-btn.upper-btn {
+                    @include Quess-number-adaptive.breakpoint2 {
+                        width: 12rem;
+                    }
+                }
+
 
                 .upper-warn {
                    @include PixelFont();
@@ -92,6 +117,30 @@ html {
                     content: ">";
                    }
                 }
+
+                .upper-warn.upper-warn.upper-warn.upper-warn {
+                    @include Quess-number-adaptive.breakpoint4 {
+                        font-size: 1.7rem;
+                    }
+                }
+
+                .upper-warn.upper-warn.upper-warn {
+                    @include Quess-number-adaptive.breakpoint3 {
+                        font-size: 2rem;
+                    }
+                }
+
+                .upper-warn.upper-warn {
+                    @include Quess-number-adaptive.breakpoint2 {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+
+            .header-content-upper.header-content-upper {
+                @include Quess-number-adaptive.breakpoint4 {
+                    padding: 3rem 1rem;
+                }
             }
 
 
@@ -103,6 +152,24 @@ html {
                 align-self: center;
                 justify-self: center;
                 margin-top: 2rem;
+            }
+
+            .header-title.header-title.header-title.header-title {
+                @include Quess-number-adaptive.breakpoint4 {
+                    font-size: 3rem;
+                }
+            }
+
+            .header-title.header-title.header-title {
+                @include Quess-number-adaptive.breakpoint3 {
+                    font-size: 4rem;
+                }
+            }
+
+            .header-title.header-title {
+                @include Quess-number-adaptive.breakpoint2 {
+                    font-size: 5rem;
+                }
             }
 
 
@@ -264,6 +331,22 @@ html {
                         font-size: 3rem;
                         font-weight: 600;
                     }
+                }
+
+                .content-block2.content-block2 {
+                    @include Quess-number-adaptive.breakpoint1 {
+                        margin-top: 3rem;
+                        text-align: center;
+                        
+                    }
+                }
+            }
+
+            .main-content.main-content {
+                @include Quess-number-adaptive.breakpoint1 {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-items: center;
                 }
             }
         }

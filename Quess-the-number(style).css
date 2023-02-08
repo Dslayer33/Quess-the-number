@@ -9,6 +9,12 @@ html {
   font-size: 62.5%;
 }
 
+@media screen and (min-width: 1400px) {
+  .html.html {
+    font-size: 90%;
+  }
+}
+
 .body {
   background-color: #1b065e;
   display: -webkit-box;
@@ -68,6 +74,21 @@ html {
   font-size: 2.5rem;
   font-weight: 600;
 }
+@media screen and (max-width: 300px) {
+  .body .header__container .header-content-upper .upper-btn.upper-btn.upper-btn.upper-btn {
+    width: 8rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .body .header__container .header-content-upper .upper-btn.upper-btn.upper-btn {
+    width: 10rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .body .header__container .header-content-upper .upper-btn.upper-btn {
+    width: 12rem;
+  }
+}
 .body .header__container .header-content-upper .upper-warn {
   font-family: "Dancing Script", cursive;
   font-family: "Oleo Script", cursive;
@@ -85,6 +106,26 @@ html {
 .body .header__container .header-content-upper .upper-warn::after {
   content: ">";
 }
+@media screen and (max-width: 350px) {
+  .body .header__container .header-content-upper .upper-warn.upper-warn.upper-warn.upper-warn {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .body .header__container .header-content-upper .upper-warn.upper-warn.upper-warn {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .body .header__container .header-content-upper .upper-warn.upper-warn {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .body .header__container .header-content-upper.header-content-upper {
+    padding: 3rem 1rem;
+  }
+}
 .body .header__container .header-title {
   font-family: "Dancing Script", cursive;
   font-family: "Oleo Script", cursive;
@@ -98,6 +139,21 @@ html {
   -ms-grid-column-align: center;
       justify-self: center;
   margin-top: 2rem;
+}
+@media screen and (max-width: 350px) {
+  .body .header__container .header-title.header-title.header-title.header-title {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .body .header__container .header-title.header-title.header-title {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .body .header__container .header-title.header-title {
+    font-size: 5rem;
+  }
 }
 .body .header__container .header-block {
   margin-top: 6rem;
@@ -253,4 +309,22 @@ html {
   color: #F5ECCD;
   font-size: 3rem;
   font-weight: 600;
+}
+@media screen and (max-width: 550px) {
+  .body .main__container .main-content .content-block2.content-block2 {
+    margin-top: 3rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 550px) {
+  .body .main__container .main-content.main-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
 }
